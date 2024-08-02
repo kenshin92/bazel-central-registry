@@ -1,0 +1,13 @@
+--- /dev/null
++++ BUILD.bazel
+@@ -0,0 +1,10 @@
++package(default_visibility = ["//visibility:public"])
++
++cc_library(
++    name = "uuid_v4",
++    hdrs = [
++        "endianness.h",
++        "uuid_v4.h",
++    ],
++    linkstatic = True,
++)

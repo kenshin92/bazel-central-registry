@@ -1,0 +1,16 @@
+{
+    "homepage": "https://github.com/crashoz/uuid_v4",
+    "maintainers": [
+        {
+            "email": "genjun.liu@lingverse.ai",
+            "name": "genjun.liu"
+        }
+    ],
+    "repository": [
+        "github:crashoz/uuid_v4"
+    ],
+    "versions": [
+        "1.0.0"
+    ],
+    "yanked_versions": {}
+}

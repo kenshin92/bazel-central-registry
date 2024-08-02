@@ -1,6 +1,9 @@
 load("@npm//:defs.bzl", "npm_link_all_packages")
 load("@pip//:requirements.bzl", "requirement")
-load("@python_versions//3.11:defs.bzl", compile_pip_requirements_3_11 = "compile_pip_requirements")
+load(
+    "@python_versions//3.11:defs.bzl",
+    compile_pip_requirements_3_11 = "compile_pip_requirements",
+)
 load("@rules_python//python:defs.bzl", "py_binary", "py_library", "py_test")
 
 npm_link_all_packages(name = "node_modules")
@@ -14,6 +17,15 @@ compile_pip_requirements_3_11(
 py_binary(
     name = "add_module",
     srcs = ["add_module.py"],
+    deps = [
+        ":bcr_validation",
+        ":registry",
+    ],
+)
+
+py_binary(
+    name = "add_module_plus",
+    srcs = ["add_module_plus.py"],
     deps = [
         ":bcr_validation",
         ":registry",

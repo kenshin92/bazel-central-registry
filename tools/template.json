@@ -1,0 +1,28 @@
+{
+    "homepage": "https://github.com/crashoz/uuid_v4",
+    "maintainers": [
+        {
+            "name": "genjun.liu",
+            "email": "genjun.liu@lingverse.ai"
+        }
+    ],
+    "module": {
+        "build_file": "uuid_v4.BUILD",
+        "build_targets": [
+            "@uuid_v4//:uuid_v4"
+        ],
+        "compatibility_level": "1",
+        "deps": [],
+        "module_dot_bazel": "uuid_v4.MODULE.bazel",
+        "name": "uuid_v4",
+        "patch_strip": 0,
+        "patches": [],
+        "presubmit_yml": null,
+        "strip_prefix": "uuid_v4-1.0.0",
+        "test_module_build_targets": [],
+        "test_module_path": null,
+        "test_module_test_targets": [],
+        "url": "https://github.com/crashoz/uuid_v4/archive/refs/tags/v1.0.0.zip",
+        "version": "1.0.0"
+    }
+}
